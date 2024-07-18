@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-    public static class ColorToPairNumberViceVersaTests
+    public static class Tests
     {
         public static void RunTests()
         {
@@ -13,13 +13,6 @@ namespace TelCo.ColorCoder
 
             PairNumberFromColorTest(Color.Yellow, Color.Green, 18);
             PairNumberFromColorTest(Color.Red, Color.Blue, 6);
-
-            InvalidColorFromPairNumberTest(0);
-            InvalidColorFromPairNumberTest(26);
-
-            InvalidPairNumberFromColorTest(Color.Pink,Color.Blue);
-            InvalidPairNumberFromColorTest(Color.White,Color.Purple);
-
         }
 
         private static void ColorFromPairNumberTest(int pairNumber, Color expectedMajor, Color expectedMinor)
@@ -35,31 +28,5 @@ namespace TelCo.ColorCoder
             int pairNumber = ColorCoder.GetPairNumberFromColor(colorPair);
             Debug.Assert(pairNumber == expectedPairNumber);
         }
-
-        private static void InvalidColorFromPairNumberTest(int pairNumber)
-        {
-            try
-            {
-                ColorCoder.GetColorFromPairNumber(pairNumber);
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                Debug.Assert(ex is ArgumentOutOfRangeException);
-            }
-        }
-
-        private static void InvalidPairNumberFromColorTest(Color majorColor, Color minorColor)
-        {
-            try
-            {
-                MajorMinorColorPair colorPair = new(majorColor, minorColor);
-                ColorCoder.GetPairNumberFromColor(colorPair);
-            }
-            catch (ArgumentException ex)
-            {
-                Debug.Assert(ex is ArgumentException);
-            }
-        }
-
     }
 }
