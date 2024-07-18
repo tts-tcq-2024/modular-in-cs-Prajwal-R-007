@@ -1,7 +1,7 @@
-using ConsoleApp1;
+using ColorFromPairNumber;
 using static TelCo.ColorCoder.Program;
 
-namespace ConsoleApp2
+namespace PairNumberFromColor
 {
     internal static class PairNumberFromColor
     {
