@@ -4,6 +4,7 @@ internal class Program
 {
     private static void Main()
     {
-        ColorToPairNumberViceVersaTests.RunTests();
+        Tests.RunTests();
+        InvalidTests.RunTests();
     }
 }
