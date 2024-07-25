@@ -1,16 +1,6 @@
-using System;
 using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-    public class MajorMinorColorPair
-    {
-        public Color MajorColor { get; }
-        public Color MinorColor { get; }
-     }
-    public MajorMinorColorPair(Color majorColor, Color minorColor)
-    {
-        MajorColor = majorColor;
-        MinorColor = minorColor;
-    }
+    public record MajorMinorColorPair(Color MajorColor, Color MinorColor);
 }
