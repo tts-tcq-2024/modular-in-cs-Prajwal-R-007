@@ -1,5 +1,4 @@
 using System.Drawing;
-using MajorMinorColorPair;
 
 namespace TelCo.ColorCoder
 {
