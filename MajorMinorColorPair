@@ -7,11 +7,10 @@ namespace TelCo.ColorCoder
     {
         public Color MajorColor { get; }
         public Color MinorColor { get; }
-
-        public MajorMinorColorPair(Color majorColor, Color minorColor)
-        {
-            MajorColor = majorColor;
-            MinorColor = minorColor;
-        }
+     }
+    public MajorMinorColorPair(Color majorColor, Color minorColor)
+    {
+        MajorColor = majorColor;
+        MinorColor = minorColor;
     }
 }
