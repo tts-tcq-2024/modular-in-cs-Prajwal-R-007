@@ -6,8 +6,8 @@ namespace TelCo.ColorCoder
     {
         public static void InitializeColorArray(out Color[] colorMapMajor, out Color[] colorMapMinor)
         {
-            colorMapMajor = [Color.White, Color.Red, Color.Black, Color.Yellow, Color.Violet];
-            colorMapMinor = [Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray];
+            colorMapMajor = new Color[] { Color.White, Color.Red, Color.Black, Color.Yellow, Color.Violet };
+            colorMapMinor = new Color[] { Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray };
         }
     }
 }
