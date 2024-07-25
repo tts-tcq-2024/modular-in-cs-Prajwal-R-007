@@ -7,11 +7,6 @@ namespace TelCo.ColorCoder
         private static readonly Color[] colorMapMajor;
         private static readonly Color[] colorMapMinor;
 
-        static ColorCoder()
-        {
-            Initializer.InitializeColorArray(out colorMapMajor, out colorMapMinor);
-        }
-
         public static MajorMinorColorPair GetColorFromPairNumber(int pairNumber)
         {
             int minorSize = colorMapMinor.Length;
@@ -40,6 +35,11 @@ namespace TelCo.ColorCoder
             }
 
             return (majorIndex * colorMapMinor.Length) + (minorIndex + 1);
+        }
+        
+        static ColorCoder()
+        {
+            Initializer.InitializeColorArray(out colorMapMajor, out colorMapMinor);
         }
     }
 }
