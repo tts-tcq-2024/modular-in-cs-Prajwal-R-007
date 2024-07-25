@@ -1,8 +1,6 @@
-using TelCo.ColorCoder;
-
-internal class Program
+namespace TelCo.ColorCoder
 {
-    private static void Main()
+    private static void Main(string[] args)
     {
         Tests.RunTests();
         InvalidTests.RunTests();
