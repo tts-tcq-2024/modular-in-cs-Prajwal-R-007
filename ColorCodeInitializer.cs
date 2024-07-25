@@ -10,10 +10,4 @@ namespace TelCo.ColorCoder
             colorMapMinor = [Color.Blue, Color.Orange, Color.Green, Color.Brown, Color.SlateGray];
         }
     }
-
-    public class MajorMinorColorPair(Color majorColor, Color minorColor)
-    {
-        public Color MajorColor { get; } = majorColor;
-        public Color MinorColor { get; } = minorColor;
-    }
 }
