@@ -1,6 +1,6 @@
 namespace TelCo.ColorCoder
 {
-    private static void Main()
+    public static void Main()
     {
         Tests.RunTests();
         InvalidTests.RunTests();
